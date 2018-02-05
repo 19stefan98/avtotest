@@ -36,7 +36,7 @@ namespace TeacoSubscribeNunit
         [Test]
         public void TestMethod1()
         {
-            var actual = "Пользователь";
+            var actual = "Пока нет товаров";
 
             Avtorizacia avto = new Avtorizacia(driver);
                         avto.Test();
