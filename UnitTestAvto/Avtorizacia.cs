@@ -31,7 +31,7 @@ namespace TeacoSubscribeNunit
             password.SendKeys("123456");
             var sub = driver.FindElement(By.XPath("//*[@id=\"js_auth_button\"]"));
             sub.Click();
-            text = (new WebDriverWait(driver, timeout)).Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/div[3]/header/div/div/div[4]/div/div/table/tbody/tr/td[1]/span"))).Text;
+            text = (new WebDriverWait(driver, timeout)).Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/div[1]/header/div/div/div[4]/div/a/span[1]"))).Text;
 
         }
     }
