@@ -26,7 +26,7 @@ namespace TeacoSubscribeNunit
             vxod.Click();
 
             var mail = (new WebDriverWait(driver, timeout)).Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/div[5]/div[1]/div[2]/div[2]/div[1]/div/form/div/div[2]/div[2]/input")));
-            mail.SendKeys("stepan.mitrofanov.2015@mail.ru");
+            mail.SendKeys("stefan999@mail.ru");
             var password = driver.FindElement(By.XPath("/html/body/div[5]/div[1]/div[2]/div[2]/div[1]/div/form/div/div[2]/div[3]/input"));
             password.SendKeys("123456");
             var sub = driver.FindElement(By.XPath("//*[@id=\"js_auth_button\"]"));
